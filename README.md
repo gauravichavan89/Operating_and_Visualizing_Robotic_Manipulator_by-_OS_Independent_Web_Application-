@@ -9,6 +9,8 @@ network, and web visualisation. We show each of the steps separately, which woul
 integrated with real robot.
 
 
+
+
 1. For robot arm mechanism, we have provided two scripts of matlab. One for forward
 kinematics, one for inverse kinematics. Put six positive angles in forward
 kinematics(forward_kinematics.m), which will result a 4*4matrics, in this format, where
@@ -25,6 +27,7 @@ We have included inverse_kinematics_positive_negative_roots.py for both positive
 and negative roots and although we aren't using this we have included this as it
 includes both positive and negative roots and it would be used in future to fix the
 existing drawback of handling orientation values with negative roots.
+
 
 
 
@@ -51,6 +54,8 @@ message in the terminal of Ubuntu, it will show connected client.
 
 
 After this, you can send object information from the web page to server by clicking Send Position button.
+
+
 
 
 3. In the web visualization part, the colored object represents the real object in a scene. The
