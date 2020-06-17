@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <script type="text/javascript"
+        src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+    <script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+
+    <script type="text/javascript" type="text/javascript" src = "rosbridge.js"> </script>
+
+</head>
+
+<body>
+    <div style="padding-top: 20px; padding-right: 20px; padding-bottom: 50px; padding-left: 20px">
+    <h2>Rational Robotics</h2>
+    <p id="receivedMessage" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px"></p>
+    <button style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px" onclick="cmdVel.publish(twist)">Send Position</button>
+
+    </div>
+    <di id="scene3D" style="padding-top: 0px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">
+    </div>
+    <div>
+        <button id = "x+" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">xTranslation+</button>
+        <button id = "x-" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">xTranslation-</button>
+        <button id = "y+" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">yTranslation+</button>
+        <button id = "y-" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">yTranslation-</button>
+        <button id = "z+" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">zTranslation+</button>
+        <button id = "z-" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">zTranslation-</button>
+    </div>
+    <div>
+        <button id = "x+" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">xRotation+</button>
+        <button id = "x+" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">xRotation-</button>
+        <button id = "x+" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">yRotation+</button>
+        <button id = "x+" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">yRotation-</button>
+        <button id = "x+" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">zRotation+</button>
+        <button id = "x+" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">zRotation-</button>
+    </div>
+    <div>
+        
+            x:
+            <input id = "inputX" type="text" name="firstname">
+            y:
+            <input id = "inputY" type="text" name="lastname">
+            z:
+            <input id = "inputZ" type="text" name="lastname"><br>
+            xRotation:
+            <input id = "inputXrotation" type="text" name="firstname">
+            yRotation:
+            <input id = "inputYrotation" type="text" name="lastname">
+            zRotation:
+            <input id = "inputZrotation" type="text" name="lastname"> <button id = "updatePose">submit</button>
+            <br>
+          
+          
+    </div>
+
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js'></script>
+<script src='https://threejs.org/examples/js/controls/TrackballControls.js'></script>
+<script src='https://mamboleoo.be/learnThree/demos/OBJLoader.js'></script>
+
+<script src = "threeDarm.js"></script>
+
+</html>
