@@ -1,0 +1,2 @@
+# Operating_and_Visualizing_Robotic_Manipulator_by-_OS_Independent_Web_Application-
+We have proposed a system that computes the orientation and position of each of the 6 joints of our robotic manipulator -’Aubo i5’, wired to the server’s system while it picks up and drops an object using Inverse Kinematics. This data is then communicated to the client’s side for visualizing it in a 3D web application through TCP connection.
