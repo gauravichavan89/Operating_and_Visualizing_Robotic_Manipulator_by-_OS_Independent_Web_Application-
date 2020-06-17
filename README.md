@@ -9,7 +9,7 @@ network, and web visualisation. We show each of the steps separately, which woul
 integrated with real robot.
 
 
-* For robot arm mechanism, we have provided two scripts of matlab. One for forward
+1. For robot arm mechanism, we have provided two scripts of matlab. One for forward
 kinematics, one for inverse kinematics. Put six positive angles in forward
 kinematics(forward_kinematics.m), which will result a 4*4matrics, in this format, where
 px, py px is the final position and first 3*3 matrix is rotation. Put these values on the
@@ -28,7 +28,7 @@ existing drawback of handling orientation values with negative roots.
 
 
 
-* 2. For checking the communication part between the ROS and client server, install ROS
+2. For checking the communication part between the ROS and client server, install ROS
 kinetic in a ubuntu computer. ( http://wiki.ros.org/kinetic/Installation/Ubuntu ) 
 Install Rosbridge by the command “sudo apt-get install ros-kinetic-rosbridge-suite”. 
 
@@ -53,7 +53,7 @@ message in the terminal of Ubuntu, it will show connected client.
 After this, you can send object information from the web page to server by clicking Send Position button.
 
 
-* In the web visualization part, the colored object represents the real object in a scene. The
+3. In the web visualization part, the colored object represents the real object in a scene. The
 represented skeleton is in the scale of cm. You can control the object position with button and
 see it in the input box, as well as you can directly control the object putting values in the input
 field and clicking poseupdate button. The rotation matrices (same as described in point1) can
